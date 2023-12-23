@@ -1,0 +1,4 @@
+<!-- <img src="/images/image_interro.svg" alt="Icon" aria-label="check" style="filter: brightness(0) saturate(100%) invert(92%) sepia(53%) saturate(3535%) hue-rotate(324deg) brightness(100%) contrast(101%)"> -->
+
+<img src="/h-assets/svg/icons/ui-icons/ic-arrow-down.svg#svgView(viewBox(0 0 24 24))" alt="Icon" aria-label="arrow-down" style="filter: brightness(0) saturate(100%) invert(35%) sepia(64%) saturate(6810%) hue-rotate(246deg) brightness(91%) contrast(98%)" data-v-dc2b9efd="">
+scroll

@@ -1,0 +1,123 @@
+*,
+::before,
+::after{
+    margin : 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "DmSans";
+    src: url('./fonts/DMSans_18pt-Light.ttf');
+}
+
+@font-face {
+    font-family: "GoogleSans";
+    src: url('/fonts/GoogleSans-Regular.ttf');
+}
+
+
+.main-box{
+    max-width: 600px;
+    /* height: 400px; */
+    border: 2px solid red;
+    padding: 20px;
+    text-align: center;
+    font-family:  "GoogleSans", "Arial", serif;
+    /* display: flex;
+    flex-direction: column;
+    justify-items: center; */
+}
+
+.offer_header{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px 10px ;
+    /* border: 2px solid red; */
+    color: #2f1c6a; 
+}
+
+.offer-1{
+    box-shadow: 0 1px 8px #00000029;
+    padding: 20px 10px ;
+    background-color: #fafbff;
+    border: 2px solid #8c85ff;
+}
+
+.offer_name{
+    font-size: 25px;
+    margin-bottom: 7px;
+    font-weight: 900;
+}
+
+.line{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid rgb(219, 217, 217);
+    color: #2f1c6a;   
+}
+
+.line img{
+    width: 20px;
+    height: 20px;
+    /* border: 2px solid red;   */
+}
+
+hr{
+    margin: 10px 0 ;
+    max-width: 80%;
+    transform: translateX(10%);
+}
+
+.price{
+    font-size: 20px;
+    margin-top: 7px;
+}
+
+span{
+    font-size: 14px;
+}
+
+p{
+    font-size: 14px;
+}
+
+
+
+h2, h4{
+    color: #2f1c6a; 
+    font-weight: 800;
+}
+
+.offer-1{
+    font-weight: 500;
+
+}
+
+button{
+    font-family:"GoogleSans", "Arial", serif;
+    padding: 10px 10%;
+    max-width: 240px;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    box-shadow: 0 1px 8px #00000029;
+    border: none;
+    text-align: center;
+    background-color: #673de6;
+    background-color: #fc5185;
+    cursor: pointer;
+}
+    
+
+a{
+    text-decoration: none;
+    padding: 20px auto;
+}
+
+
+
