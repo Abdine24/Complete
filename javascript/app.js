@@ -6,3 +6,6 @@ for (i= 0; i < accordion.length; i++){
         this.classList.toggle("active");
     })
 };
+
+// let spanCarous = document.querySelector(".carousel-control-prev-icon");
+// console.log(spanCarous);

@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="./css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
     <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
 
     <div class="main-box">
-        <div class="offer-1 otoff fst">
+        <!-- Partie 1----------------------------------------------------- -->
+        <!-- Offre-1 start-->
+        <div class="offer otoff offer-1">
             <div class="offer_header">
                 <h2 class="offer_name">Offre Start</h2>
-                <p>Une solution ideale pour les <span>intermédiaires</span>  pour découvrir de nouvelles astuces</p>
+                <p>Une solution idéale pour ceux qui ont déjà <span>des bases</span>  pour découvrir de nouvelles astuces pour se perfectionner</p>
                 <p class="price">2499 FCFA <span>/unlimited</span></p>
                 <a href="" class="join_course">Réjoindre la formation</a>
-                <hr>
+                <hr class="hr">
             </div> <!--offer-header-->
             
             <h4>Ressources principales</h4>
@@ -45,7 +46,7 @@
     
             <div class="line">
                 <img src="./images/croix.svg" alt="Icon" aria-label="cross" style="filter: brightness(0) saturate(100%) invert(62%) sepia(48%) saturate(7061%) hue-rotate(313deg) brightness(101%) contrast(98%)">
-                <p>Suivi personnel</p>
+                <p>Suivi personnel d'un mois</p>
             </div>
     
             <div class="line">
@@ -57,17 +58,19 @@
                 <img src="./images/croix.svg" alt="Icon" aria-label="cross" style="filter: brightness(0) saturate(100%) invert(62%) sepia(48%) saturate(7061%) hue-rotate(313deg) brightness(101%) contrast(98%)">
                 <p>Vidéos personnalisées</p>
             </div>
-        </div> <!--offer-1-->
+        </div> <!--offer-->
+         <!-- Offre-1 end-->
         <div class="box_separator"></div>
         <!-- Partie 2----------------------------------------------------- -->
-        <div class="offer-1 snd_top">
+         <!-- Offre-2 start-->
+        <div class="offer snd_top offer-2">
             <p class="evidence">Plus populaire</p>
             <div class="offer_header">
                 <h2 class="offer_name">Offre Premium</h2>
-                <p>Augmentez votre niveau avec plus de templates et d'options supplémentaire</p>
-                <p class="price">3999 FCFA <span>/unlimited</span></p>
+                <p>Augmentez votre niveau avec plus de templates et d'options supplémentaires : <span>suivi attestation</span>, etc</p>
+                <p class="price snd-price">3999 FCFA <span>/unlimited</span></p>
                 <a href="" class="join_course snd">Réjoindre la formation</a>
-                <hr>
+                <hr class="hr">
             </div> <!--offer-header-->
             
             <h4>Ressources principales</h4>
@@ -106,15 +109,17 @@
                 <p>Vidéos personnalisées</p>
             </div>
         </div> <!--offer-2-->
+         <!-- Offre-2 end-->
         <div class="box_separator"></div>
         <!-- Partie 3----------------------------------------------------- -->
-        <div class="offer-1 otoff">
+         <!-- Offre-3 start-->
+        <div class="offer otoff offer-3">
             <div class="offer_header">
                 <h2 class="offer_name">Offre Premium +</h2>
                 <p>“Profitez des de l’offre Premium ainsi que des vidéos exclusives et bénéficiez d’une réduction de 50% sur une autre formation ”</p>
                 <p class="price">5999 FCFA <span>/unlimited</span></p>
                 <a href="" class="join_course">Réjoindre la formation</a>
-                <hr>
+                <hr class="hr">
             </div> <!--offer-header-->
             
             <h4>Ressources principales</h4>
@@ -156,59 +161,67 @@
 
             <div class="line">
                 <img src="./images/ic-check.svg" alt="Icon" aria-label="check">
-                <p>50% off sur notre formation en Montage Vidéo</p>
+                <p>50% de reduction sur notre formation en Montage Vidéo</p>
             </div>
         </div> <!--offer-3-->
+         <!-- Offre-1 end-->
         <div class="box_separator"></div>
+        <!-- --------Partie 4 -Questions frequemment posées----------------------- -->
 
-        <!-- Partie FAQ -->
-
-        <div class="accordion offer-1">
+        <div class="accordion offer">
             <h2 class="accordion-title">Questions Fréquemment posées</h2>
             <div class="content-container">
-                <div class="question">Ou se déroule la formation?</div>
-                <div class="answer">Elle est 100% en ligne ! Les videos de la formation ainsi les différentes ressources sont hebergés sur Telegram. <Link:touch></Link:touch>es suivis se feront sur Whatsapp!</div>
+                <div class="question">Où  se déroule la formation ?</div>
+                <div class="answer">Elle est 100% en ligne ! Les vidéos de la formation ainsi les différentes réssources sont hebergées sur Telegram.Les suivis se feront sur Whatsapp!</div>
             </div>
     
             <div class="content-container">
-                <div class="question">Quand vais-je recevoir mon attestation?</div>
-                <div class="answer">L'attestation est delivree apres avoir fait ls differents travaux pratiques</div>
+                <div class="question">A propos de l'attestation</div>
+                <div class="answer">L'attestation est délivrée après avoir réalisés les travaux pratiques</div>
             </div>
     
             <div class="content-container">
-                <div class="question">Puis-je suivre à mon rythme?</div>
+                <div class="question">A mon rythme </div>
                 <div class="answer">Les formations fait avec des temps de suivi estimés en moyenne. Vous pouvez toute fois suivre la formation à votre propre rythme</div>
             </div>
         </div> <!--accordion-->
         <div class="box_separator"></div>
-        <!-- Partie slider avis des etudiants -->
+        <!-- Partie 5 slide avis des etudiants -->
        
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="10000">
                 <img src="./images/image-1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <h5>Intelligence Artificielle</h5>
+                  <p>Image de personnage géneré par AI.</p>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000">
                 <img src="./images/image-2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
+                  <h5>Environnement AI</h5>
+                  <p>Création d'environnement pour dessins animés.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./images/image-3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-block d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h5>L'artistique</h5>
+                  <p>Oeuvres artistiques ultra-réalistes.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/image-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-block d-md-block">
+                  <h5>Artistique </h5>
+                  <p>Géneration d'images d'animaux.</p>
                 </div>
               </div>
             </div>
@@ -221,6 +234,22 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
+
+          <footer>
+            <h4>Nous contacter</h4>
+            <div class="social-network">
+               
+                <a href="">
+                    <img src="./images/WhatsApp-icon.png" alt="">
+                    <p>Whatsapp</p>
+                </a>
+
+                <a href="">
+                    <img src="./images/Telegram-icon-2.png" alt="">
+                    <p>Telegram</p>
+                </a>
+            </div>
+          </footer>
 
     </div>  <!--offers-->
 
