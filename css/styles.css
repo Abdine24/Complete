@@ -22,41 +22,41 @@ body{
 /* Conteneur principal */
 .main-box{
     max-width: 600px;
-    /* border: 2px solid red; */
     padding: 20px;
     text-align: center;
 }
 
 .deadline{
+    width: 100%;
+    position:fixed;
+    background-color: #301c6a78;
+    top:0px;
+    z-index: 10;
     display: flex;
-    margin : 5px auto;
-    padding: 10px 0;
-    border: 2px solid #8c85ff;
+    align-items: center;
+    padding: 5px 15px;
+    /* border: 2px solid #8c85ff; */
 }
 
-.deadline h4{
+.deadline h4:not(#text){
     display: flex;
     border: 2px solid #8c85ff;
-    border-radius: 4px;
     background-color: rgb(240, 251, 255);
-    color: #2f1c6a;
+    color:#fc5185;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: 600;
     padding: 10px;
     margin-right: 5px ;
 }
-.comment-box{
-    margin-top: 14px;
-    border: 2px solid #8c85ff;
-    border-radius: 4px;
-    background-color: rgb(240, 251, 255);
-    font-size: 15px;
-    font-weight: normal;
-}
+
 #text{
-    background-color: white;
+    /* background-color: white; */
     padding-left: 0px;
     border: none;
+    font-size: 14px;
+    color:#ffffff;
+    margin-right: 8px;
+    font-weight: 700;
 }
 
 
@@ -189,6 +189,7 @@ a:hover{
 
 .offer-1{
     margin-bottom: 15px;
+    margin-top: 50px;
     
 }
 /* offer-2 */
@@ -238,7 +239,7 @@ a:hover{
 .accordion .content-container .question{
     padding: 18px 0;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     color:#2f1c6a ;
     cursor: pointer;
     border-bottom: 1px solid #2f1c6a;
@@ -263,6 +264,10 @@ a:hover{
     height: 0px;
     overflow: hidden;
     transition: 0.5s;
+}
+
+.accordion .content-container .answer:nth-child(2){
+    padding-bottom: 5px;
 }
 
 .accordion .content-container.active .answer{
@@ -297,7 +302,8 @@ footer{
     margin-top: 10px;
     background-color: #fafbff;
     box-shadow: 0 1px 8px #00000029;
-    border: 2px solid #8c85ff;
+    border-top:2px solid #8c85ff;
+    /* border: 2px solid #8c85ff; */
 }
 
 .social-network{
@@ -311,16 +317,14 @@ footer .social-network{
 footer .social-network a{
     display: flex;
     align-items: center;
-    width: 45%;
-    justify-content: space-between;
     text-decoration: none;
-    border: 2px solid #8c85ff;
     border-radius: 3px;
     background-color: white; 
 }
 
 footer .social-network a:hover{
-    border: 2px solid #3a6c55;
+    /* border: 2px solid #3a6c55; */
+    scale: 1.1;
 }
 
 footer .social-network a p{
@@ -330,18 +334,32 @@ footer .social-network a p{
 
 footer .social-network a img{
     width: 30px;
-    height: 25px;
-    margin: 10px 5px 10px 0;
-    object-fit: cover;
-    scale: 1.1;
+    /* height: 25px; */
+    margin:  0;
+    object-fit: cover/center no-repeat;
+    /* scale: 1.1; */
  }
+/* -------------Commentaires----------- */
+.comment-box{
+    margin-top: 14px;
+    border: 2px solid #8c85ff;
+    border-radius: 4px;
+    /* background-color: rgb(240, 251, 255); */
+    font-size: 15px;
+    font-weight: normal;
+}
+
 
 .comment-box h2{
     color:#fc5185;
+    margin-top: 10px;
 }
 
 #comment{
     color: #2f1c6a;
+    background-color: white;
+    padding:7px;
+
 }
 
 #more-comment{
@@ -355,5 +373,4 @@ footer .social-network a img{
     color: white;
     border-radius: 3px;
     margin-bottom: 10px;
-    /* font-style: italic; */
 }
