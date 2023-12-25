@@ -26,6 +26,40 @@ body{
     padding: 20px;
     text-align: center;
 }
+
+.deadline{
+    display: flex;
+    margin : 5px auto;
+    padding: 10px 0;
+    border: 2px solid #8c85ff;
+}
+
+.deadline h4{
+    display: flex;
+    border: 2px solid #8c85ff;
+    border-radius: 4px;
+    background-color: rgb(240, 251, 255);
+    color: #2f1c6a;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 10px;
+    margin-right: 5px ;
+}
+.comment-box{
+    margin-top: 14px;
+    border: 2px solid #8c85ff;
+    border-radius: 4px;
+    background-color: rgb(240, 251, 255);
+    font-size: 15px;
+    font-weight: normal;
+}
+#text{
+    background-color: white;
+    padding-left: 0px;
+    border: none;
+}
+
+
 /* --------------------Les offres------------------ */
 /* Les offres entete */
 .offer_header{
@@ -36,7 +70,7 @@ body{
     text-align: center;
     height: auto;
     padding-bottom: 20px 10px ;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     color: #2f1c6a; 
 }
 
@@ -59,7 +93,15 @@ h2, h4{
     color: #2f1c6a; 
 }
 
-.offer h4{
+footer p{
+    color: #2f1c6a;
+}
+
+footer h4{
+    margin: 10px auto 0 auto;
+}
+    
+.offer h4, footer h4{
     margin-bottom: 10px;
     font-weight: 600;
     font-family: "DmSans";
@@ -91,11 +133,9 @@ h2, h4{
     height: 20px;
 }
 
-
 .hr{
     max-width: 70%;
     color:#d5dfff;
-    /* color:red; */
     border: 2px solid #8c85ff;
     transform: translateX(22%);
     
@@ -108,14 +148,13 @@ h2, h4{
     font-weight: 800;
 }
 
-.snd-price{
+.snd-price {
     color:#fc5185;
 }
 
 span, p{
     font-size: 14px;
 }
-
 
 a{
     padding: 10px 10%;
@@ -244,54 +283,77 @@ a:hover{
 
 .carousel-caption h5, .carousel-caption p{
     font-size: 16px;
-    color:#2f1c6a ;
+    color:#090318 ;
     font-weight: 700;
 }
 
 .carousel-caption h5{
-    color:#fc5185;
+    color:#85032d;
 }
 /* Partie footer */
 footer{
-    border: 1px solid rgb(0, 8, 255);
+    border-radius: 4px;
     width: 100%;
     margin-top: 10px;
     background-color: #fafbff;
+    box-shadow: 0 1px 8px #00000029;
+    border: 2px solid #8c85ff;
 }
 
 .social-network{
-    padding: 15px 10px;
-    /* color:#25419d; */
+    padding: 0px 10px;
 }
 
 footer .social-network{
     display: flex;
-    /* border: 1px solid red; */
 }
 
 footer .social-network a{
     display: flex;
-    width: 50%;
+    align-items: center;
+    width: 45%;
     justify-content: space-between;
     text-decoration: none;
-    /* border: 1px solid #25419d; */
-    border-radius: 5px;
-    background-color: white;
-    padding: 10px auto;
+    border: 2px solid #8c85ff;
+    border-radius: 3px;
+    background-color: white; 
 }
 
-footer .social-network a:first-child{
-    margin-right: 10px ;
+footer .social-network a:hover{
+    border: 2px solid #3a6c55;
 }
-
-
 
 footer .social-network a p{
    font-size: 14px;
+   margin:10px 0 10px 0;
 }
 
 footer .social-network a img{
-   width: 30px;
-   height: 25px;
-    margin-right: 5px;
+    width: 30px;
+    height: 25px;
+    margin: 10px 5px 10px 0;
+    object-fit: cover;
+    scale: 1.1;
  }
+
+.comment-box h2{
+    color:#fc5185;
+}
+
+#comment{
+    color: #2f1c6a;
+}
+
+#more-comment{
+    display: inline-block;
+    cursor: pointer;
+    background-color: #2f1c6a;
+    border: none;
+    padding: 5px 15px;
+    font-size:14px;
+    white-space: nowrap;
+    color: white;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    /* font-style: italic; */
+}
