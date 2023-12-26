@@ -35,6 +35,7 @@ body{
     display: flex;
     align-items: center;
     padding: 5px 15px;
+    margin-right: 15px;
     /* border: 2px solid #8c85ff; */
 }
 
@@ -223,6 +224,8 @@ a:hover{
     background-color: #ffe8ef;
     color: hsl(342, 97%, 65%);
 }
+
+
 /* ---------------------FAQ---------------------------- */
 .accordion{
     border-radius: 4px;
