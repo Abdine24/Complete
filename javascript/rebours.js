@@ -1,4 +1,4 @@
-var countDownDate = new Date("Dec 27, 2023 23:59:59").getTime();
+var countDownDate = new Date("Dec 28, 2023 20:46:00").getTime();
 
 // Mettre à jour le compte à rebours toutes les secondes
 var x = setInterval(function() {
@@ -20,6 +20,7 @@ var x = setInterval(function() {
   var heures= document.getElementById("heures");
   var maMinute = document.getElementById("maMinute");
   var secondes= document.getElementById("secondes");
+  var price = document.getElementById("first-price");
   
   jours.innerHTML= days + " J ";
   heures.innerHTML= hours + " H ";
@@ -34,6 +35,10 @@ var x = setInterval(function() {
   // Si le compte à rebours est terminé, afficher un message
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRÉ";
+    jours.innerHTML= "<span >0 J</span>";
+    heures.innerHTML= "<span>0 H</span>";
+    secondes.innerHTML= "<span>0 s</span>";
+    maMinute.innerHTML= "<span>0 m</span>";
+    price.innerHTML = "10000 FCFA <span>/unlimited</span>";
   }
 }, 1000);

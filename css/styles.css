@@ -18,19 +18,27 @@
 }
 body{
     font-family: "GoogleSans"; /*'Segoe UI', sans-serif; */
+    /* transform: translateX(25%); */
+    background-color: #f1f3c1;
+    display: flex;
+    justify-content: center;
 }
 /* Conteneur principal */
 .main-box{
+    /* position: relative; */
     max-width: 600px;
     padding: 20px;
     text-align: center;
 }
 
 .deadline{
-    width: 100%;
+    /* white-space: nowrap; */
+    max-width: 600px;
     position:fixed;
     background-color: #301c6a78;
     top:0px;
+    left: 0;
+    right: 0;
     z-index: 10;
     display: flex;
     align-items: center;
@@ -44,16 +52,19 @@ body{
     border: 2px solid #8c85ff;
     background-color: rgb(240, 251, 255);
     color:#fc5185;
+    border-radius: 5px;
     font-size: 15px;
     font-weight: 600;
     padding: 10px;
     margin-right: 5px ;
 }
 
+
 #text{
     /* background-color: white; */
     padding-left: 0px;
     border: none;
+    margin-left: 0px;
     font-size: 14px;
     color:#ffffff;
     margin-right: 8px;
@@ -102,7 +113,7 @@ footer h4{
     margin: 10px auto 0 auto;
 }
     
-.offer h4, footer h4{
+.offer h4{
     margin-bottom: 10px;
     font-weight: 600;
     font-family: "DmSans";
@@ -134,19 +145,25 @@ footer h4{
     height: 20px;
 }
 
-.hr{
-    max-width: 70%;
-    color:#d5dfff;
+.hr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    color: #d5dfff;
     border: 2px solid #8c85ff;
-    transform: translateX(22%);
-    
-}
+    margin: 10px auto 10px auto;
+  }
 
 .price{
     font-size: 20px;
     margin-top: 7px;
     color:#8c85ff;
     font-weight: 800;
+}
+
+.spn{
+    color:green;
 }
 
 .snd-price {
@@ -157,7 +174,7 @@ span, p{
     font-size: 14px;
 }
 
-a{
+a:not(footer a){
     padding: 10px 10%;
     max-width: 240px;
     max-height: 40px;
@@ -308,40 +325,41 @@ footer{
     border-top:2px solid #8c85ff;
     /* border: 2px solid #8c85ff; */
 }
-
+footer h4{
+    margin-bottom: 10px;
+    font-family: "DmSans";
+    font-size: 15px;
+}
 .social-network{
-    padding: 0px 10px;
+    padding:10px;
 }
 
 footer .social-network{
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 footer .social-network a{
     display: flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
     align-items: center;
+    justify-items: center;
     text-decoration: none;
-    border-radius: 3px;
     background-color: white; 
 }
 
 footer .social-network a:hover{
-    /* border: 2px solid #3a6c55; */
     scale: 1.1;
 }
 
 footer .social-network a p{
-   font-size: 14px;
-   margin:10px 0 10px 0;
+   font-size: 25px;
+   margin:10px;
 }
 
-footer .social-network a img{
-    width: 30px;
-    /* height: 25px; */
-    margin:  0;
-    object-fit: cover/center no-repeat;
-    /* scale: 1.1; */
- }
 /* -------------Commentaires----------- */
 .comment-box{
     margin-top: 14px;
@@ -376,4 +394,17 @@ footer .social-network a img{
     color: white;
     border-radius: 3px;
     margin-bottom: 10px;
+}
+
+@media screen and(min-width:600px) {
+    .deadline{
+        /* white-space: nowrap; */
+        max-width: 600px;
+        position:fixed;
+        background-color: #301c6a78;
+        top:0px;
+        left: 50%;
+        /* right: 0; */
+        z-index: 10;
+    }
 }
