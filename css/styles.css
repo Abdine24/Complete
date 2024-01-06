@@ -20,7 +20,12 @@ body{
     font-family: "GoogleSans"; /*'Segoe UI', sans-serif; */
     background-color: #d2d2cf;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 /* Conteneur principal */
 .main-box{
@@ -32,7 +37,7 @@ body{
 
 .deadline{
     /* white-space: nowrap; */
-    max-width: 600px;
+    max-width: 615px;
     position:fixed;
     background-color: #301c6a78;
     top:0px;
@@ -250,6 +255,8 @@ a:hover{
     border-radius: 4px;
     text-align: left;
     background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-bottom: 50px;
 }
 
 .accordion .accordion-title{
@@ -424,7 +431,7 @@ footer .social-network a p{
 
 .slider-1 .slider{
     display: flex;
-    animation: slider-1 20s infinite ease-in-out;
+    animation: slider-1 120s infinite ease-in-out;
 }
 
 .slider-1 img{
@@ -432,9 +439,14 @@ footer .social-network a p{
     flex-shrink: 0;
     padding: 20px 0;
     width: 100%;
+    object-fit: contain;
 }
 
-@keyframes slider-1{
+
+#para{
+    text-align: left;
+}
+/* @keyframes slider-1{
     0%,
     20% {
         transform: translateX(0);
@@ -458,6 +470,185 @@ footer .social-network a p{
     100% {
     transform:translateX(-400%)
     } 
+} */
+
+@keyframes slider-1{
+    0%,
+    3% {
+        transform: translateX(0);
+    }
+    3% ,
+    6% {
+        transform: translateX(-100%);
+    }
+
+    7% ,
+    9% {
+        transform: translateX(-200%);
+    }
+
+    10% ,
+    12% {
+        transform: translateX(-300%);
+    }
+
+    13% ,
+    14% {
+        transform: translateX(-400%);
+    }
+
+    15% ,
+    17% {
+        transform: translateX(-500%);
+    }
+
+    16% ,
+    19% {
+        transform: translateX(-600%);
+    }
+
+
+    21%,
+    26% {
+        transform: translateX(-700%);
+    }
+
+    24%,
+    30% {
+        transform:translateX(-800%);
+    }
+
+
+    27%,
+    33% {
+        transform:translateX(-900%);
+    }
+
+    30%,
+    36% {
+        transform:translateX(-1000%);
+    }
+
+    33%,
+    39% {
+        transform:translateX(-1100%);
+    }
+
+    36%,
+    42% {
+        transform:translateX(-1200%);
+    }
+
+    39%,
+    45% {
+        transform:translateX(-1300%);
+    }
+
+    42%,
+    48% {
+        transform:translateX(-1400%);
+    }
+
+    45%,
+    51% {
+        transform:translateX(-1500%);
+    }
+
+    48%,
+    54% {
+        transform:translateX(-1600%);
+    }
+
+    51%,
+    57% {
+        transform:translateX(-1700%);
+    }
+
+    54%,
+    60% {
+        transform:translateX(-1800%);
+    }
+
+    57%,
+    63% {
+        transform:translateX(-1900%);
+    }
+
+    60%,
+    66% {
+        transform:translateX(-2000%);
+    }
+
+    63%,
+    69% {
+        transform:translateX(-2100%);
+    }
+
+    66%,
+    72% {
+        transform:translateX(-2200%);
+    }
+
+    69%,
+    75% {
+        transform:translateX(-2300%);
+    }
+
+    72%,
+    78% {
+        transform:translateX(-2400%);
+    }
+
+    75%,
+    81% {
+        transform:translateX(-2500%);
+    }
+
+    78%,
+    84% {
+        transform:translateX(-2600%);
+    }
+
+    81%,
+    87% {
+        transform:translateX(-2700%);
+    }
+
+    84%,
+    90% {
+        transform:translateX(-2800%);
+    }
+
+    87%,
+    93% {
+        transform:translateX(-2900%);
+    }
+
+    90%,
+    96% {
+        transform:translateX(-3000%);
+    }
+
+    100%,
+    100% {
+    transform:translateX(-3100%)
+    } 
+}
+
+
+
+
+
+
+
+
+
+#scrollup{
+    min-width: 240px;
+    position: absolute;
+    bottom: -65px;
+    color: white;
+    left:25%;
 }
   
   
