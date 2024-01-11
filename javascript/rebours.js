@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jan 08, 2024 23:59:59").getTime();
+var countDownDate = new Date("Jan 14, 2024 23:59:59").getTime();
 
 // Mettre à jour le compte à rebours toutes les secondes
 var x = setInterval(function() {
